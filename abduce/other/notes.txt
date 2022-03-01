@@ -1,0 +1,2 @@
+Used in:
+	1. Example-Guided Synthesis of Relational Queries, PLDI 2020.

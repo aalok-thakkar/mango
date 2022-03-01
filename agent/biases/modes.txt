@@ -1,0 +1,6 @@
+#modeb(1, agent_at(var(c),var(t)), (positive)).
+#modeb(1, adjacent(var(c),var(c)), (positive)).
+#modeb(1, unlocked(var(c)), (positive)).
+#modeb(1, not_wall(var(c),var(c)), (positive)).
+#modeh(valid_move(var(c),var(t))).
+#maxv(3).

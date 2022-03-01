@@ -1,0 +1,1 @@
+Mark Law, Alessandra Russo, and Krysia Broda. 2014. Inductive Learning of Answer Set Programs. In Proceedings of the European Conference on Logics in Artificial Intelligence ( JELIA).
