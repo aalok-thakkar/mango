@@ -1,0 +1,4 @@
+#modeb(1, allergens(var(i),var(a)), (positive)).
+#modeb(1, ismadefrom(var(d),var(i)), (positive)).
+#modeh(contains(var(d),var(a))).
+#maxv(3).
