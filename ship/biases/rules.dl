@@ -1,0 +1,9 @@
+.type V
+.decl CustomerCity(v0: V, v1: V)
+.input CustomerCity
+.decl HasOrdered(v0: V, v1: V)
+.input HasOrdered
+.decl ProductName(v0: V, v1: V)
+.input ProductName
+.decl ShipTo(v0: V, v1: V)
+.output ShipTo
