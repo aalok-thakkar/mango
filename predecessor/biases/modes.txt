@@ -1,0 +1,3 @@
+#modeb(1, succ(var(n),var(n)), (positive)).
+#modeh(target(var(n),var(n))).
+#maxv(2).

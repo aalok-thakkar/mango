@@ -1,0 +1,4 @@
+#modeb(2, assigned(var(d),var(s),var(c)), (positive)).
+#modeb(1, neq(var(c),var(c)), (positive)).
+#modeh(conflict(var(d))).
+#maxv(4).

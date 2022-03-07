@@ -1,0 +1,4 @@
+#modeb(1, reduces(var(d),var(s)), (positive)).
+#modeb(1, knowngenericallyas(var(b),var(d)), (positive)).
+#modeh(reduce(var(b),var(s))).
+#maxv(3).

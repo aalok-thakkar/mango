@@ -1,0 +1,7 @@
+.type I, P
+.decl input_a( v0: I,v1: P)
+.input input_a
+.decl neg_input0( v0: I,v1: P)
+.input neg_input0
+.decl output_a(v0: I,v1: P)
+.output output_a

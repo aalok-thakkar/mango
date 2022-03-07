@@ -1,0 +1,6 @@
+#modeb(1, floattypes(var(t)), (positive)).
+#modeb(1, forstmt(var(i), var(n), var(c), var(u)), (positive)).
+#modeb(1, initexpr(var(n), var(v)), (positive)).
+#modeb(1, var1(var(v), var(s), var(t)), (positive)).
+#modeh(incrementonfloat(var(i))).
+#maxv(7).

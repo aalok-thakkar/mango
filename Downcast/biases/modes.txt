@@ -1,0 +1,10 @@
+#modeb(1, ht(var(h), var(t)), (positive)).
+#modeb(1, mcheckcastinst(var(m), var(v), var(t), var(v)), (positive)).
+#modeb(1, vh(var(v), var(h)), (positive)).
+#modeb(1, notsub(var(t), var(t)), (positive)).
+#modeb(1, reachablem(var(m)), (positive)).
+#modeh(badcast(var(v), var(t))).
+#modeh(ptsvt(var(v), var(t))).
+#modeh(reachablecast(var(t), var(v))).
+#modeh(unsafedowncast(var(v), var(t))).
+#maxv(6).

@@ -1,0 +1,5 @@
+#modeb(1, input_a(var(b),var(date),var(date)), (positive)).
+#modeb(1, c0(var(date)), (positive)).
+#modeb(1, c1(var(date)), (positive)).
+#modeh(output_a(var(b))).
+#maxv(3).

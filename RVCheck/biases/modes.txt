@@ -1,0 +1,6 @@
+#modeb(1, certificate(var(x), var(l)), (positive)).
+#modeb(2, check(var(x), var(l)), (positive)).
+#modeb(1, verify(var(x), var(l)), (positive)).
+#modeb(2, opsucc(var(l), var(l)), (positive)).
+#modeh(correct(var(l))).
+#maxv(5).

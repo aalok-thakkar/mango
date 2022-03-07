@@ -1,0 +1,5 @@
+#modeb(1, father(var(p),var(p)), (positive)).
+#modeb(1, brother(var(p),var(p)), (positive)).
+#modeb(1, sister(var(p),var(p)), (positive)).
+#modeh(target(var(p),var(p))).
+#maxv(3).

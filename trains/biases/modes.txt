@@ -1,0 +1,14 @@
+#modeb(1, car(var(c)), (positive)).
+#modeb(1, train(var(t)), (positive)).
+#modeb(1, closed(var(c)), (positive)).
+#modeb(1, double(var(c)), (positive)).
+#modeb(1, open_car(var(c)), (positive)).
+#modeb(1, has_car(var(t),var(c)), (positive)).
+#modeb(1, jagged(var(c)), (positive)).
+#modeb(1, load(var(c),var(s)), (positive)).
+#modeb(1, long(var(c)), (positive)).
+#modeb(1, shape(var(c),var(s)), (positive)).
+#modeb(1, short(var(c)), (positive)).
+#modeb(1, wheels(var(c)), (positive)).
+#modeh(e(var(t))).
+#maxv(2).

@@ -1,0 +1,5 @@
+#modeb(1, statementat(var(loc),var(id)), (positive)).
+#modeb(1, assign(var(id),var(v)), (positive)).
+#modeb(1, follows(var(loc),var(loc)), (positive)).
+#modeh(reach(var(id), var(v), var(loc))).
+#maxv(4).

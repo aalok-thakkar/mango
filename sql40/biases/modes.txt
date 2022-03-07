@@ -1,0 +1,4 @@
+#modeb(2, employee(var(s),var(s),var(s),var(s)), (positive)).
+#modeb(1, lt(var(s),var(s)), (positive)).
+#modeh(output_a(var(s))).
+#maxv(8).

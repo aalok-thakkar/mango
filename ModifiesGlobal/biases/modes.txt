@@ -1,0 +1,5 @@
+#modeb(1, params(var(f), var(v)), (positive)).
+#modeb(1, globaldecl(var(v), var(n)), (positive)).
+#modeb(1, fun(var(f), var(l)), (positive)).
+#modeh(modifiesglobal(var(f), var(l))).
+#maxv(4).

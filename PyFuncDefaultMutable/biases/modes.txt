@@ -1,0 +1,5 @@
+#modeb(1, mutable(var(v)), (positive)).
+#modeb(1, hasdefaultargs(var(f)), (positive)).
+#modeb(1, params(var(f), var(i), var(v)), (positive)).
+#modeh(pyfuncdefaultmutable(var(f))).
+#maxv(3).

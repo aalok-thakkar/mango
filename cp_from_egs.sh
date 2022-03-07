@@ -12,7 +12,7 @@ sed -nE "s/(^\..*)/\1/p" "$egs_dir/$bench/rules.small.dl" | sed -E "/.*Rule.*/d"
 echo "" > $bench/biases/constants.txt
 sed -nE 's/(#.*)/\1/p' "$ilasp_dir/$bench/ilasp_bench.las" | sed -E '/#[pos|neg].*/d' > "$bench/biases/modes.txt"
 
-cp "$egs_dir/$bench/solution.txt" $bench/solutions/solution_datalog.txt || echo "" > $bench/solutions/solution_datalog.txt
+cp "$egs_dir/$bench/solution.txt" $bench/solutions/solution_datalog.txt || cp "$egs_dir/$bench/answer" $bench/solutions/solution_datalog.txt || echo "" > $bench/solutions/solution_datalog.txt
 echo "" > $bench/solutions/solution_sql.txt
 
 echo "" > $bench/other/source.txt

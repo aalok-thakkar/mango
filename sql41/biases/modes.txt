@@ -1,0 +1,4 @@
+#modeb(1, weather(var(s),var(s),var(s)), (positive)).
+#modeb(1, hightemp(var(s)), (positive)).
+#modeh(output_a(var(s))).
+#maxv(3).

@@ -1,0 +1,5 @@
+#modeb(2, greensignal(var(v)), (positive)).
+#modeb(2, hastraffic(var(v)), (positive)).
+#modeb(1, intersect(var(v),var(v)), (positive)).
+#modeh(crashes(var(v))).
+#maxv(2).

@@ -1,9 +1,5 @@
 .type C
 .type A
-
-.decl Rule(v0: number)
-.input Rule
-
 .decl hair(v0: C)
 .input hair
 .decl scales(v0: C)
@@ -22,8 +18,6 @@
 .input none
 .decl has_milk(v0: A)
 .input has_milk
-
-
 .decl mammal(v0: A)
 .output mammal
 .decl fish(v0: A)

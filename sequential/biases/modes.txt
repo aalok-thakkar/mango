@@ -1,0 +1,6 @@
+#modeb(3, father(var(p),var(p)), (positive)).
+#modeb(3, mother(var(p),var(p)), (positive)).
+#modeh(parent(var(p),var(p))).
+#modeh(grandparent(var(p),var(p))).
+#modeh(great_grandparent(var(p),var(p))).
+#maxv(4).

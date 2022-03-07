@@ -1,9 +1,5 @@
 .type T
 .type P
-
-.decl Rule(v0: number)
-.input Rule
-
 .decl not_nausea(v0: P)
 .input not_nausea
 .decl not_lumbar_pain(v0: P)
@@ -28,7 +24,5 @@
 .input burning_urethra
 .decl temparature(v0: P, v1: T)
 .input temparature
-
-
 .decl inflamation(v0: P)
 .output inflamation

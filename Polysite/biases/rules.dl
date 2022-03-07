@@ -1,0 +1,15 @@
+.type I
+.type M
+.type C
+.decl CICM(v0: C, v1: I, v2: M)
+.input CICM
+.decl virtIM(v0: I, v1: M)
+.input virtIM
+.decl Mneq(v0: M, v1: M)
+.input Mneq
+.decl insvIM(v0: I, v1: M)
+.output insvIM
+.decl virtI(v0: I)
+.output virtI
+.decl polySite(v0: I)
+.output polySite
