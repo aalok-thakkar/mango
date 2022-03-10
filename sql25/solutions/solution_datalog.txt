@@ -1,1 +1,19 @@
+.type A
+.type P
+.type PN
+.type S
+
+.decl c0(a1: A)
+.input c0
+.decl in(s1: S, p1: P)
+.input in
+.decl input0(p1: P, p1: PN)
+.input input0
+.decl input1(s1: S, a1: A)
+.input input1
+
+.decl out(p1: PN)
+.output out
+
+out(p6) :- c0(a0), input1(s1, a0), in(s1, p4), input0(p4, p6).
 

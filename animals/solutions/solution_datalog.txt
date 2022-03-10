@@ -1,4 +1,39 @@
+.type A
+.type C
+
+.decl feathers(c1: C)
+.input feathers
+.decl hair(c1: C)
+.input hair
+.decl has_covering(a1: A, c1: C)
+.input has_covering
+.decl has_eggs(a1: A)
+.input has_eggs
+.decl has_gills(a1: A)
+.input has_gills
+.decl has_milk(a1: A)
+.input has_milk
+.decl homeothermic(a1: A)
+.input homeothermic
+.decl none(c1: C)
+.input none
+.decl scales(c1: C)
+.input scales
+
+.decl bird(a1: A)
+.output bird
+.decl fish(a1: A)
+.output fish
+.decl mammal(a1: A)
+.output mammal
+.decl reptile(a1: A)
+.output reptile
+
 mammal(a0) :- has_milk(a0).
+
 fish(a0) :- has_gills(a0).
+
 reptile(a1) :- scales(c0), has_covering(a1, c0).
+
 bird(a1) :- feathers(c0), has_covering(a1, c0).
+

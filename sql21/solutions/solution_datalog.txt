@@ -1,1 +1,13 @@
+.type I
+.type P
+
+.decl input_a(i1: I, p1: P)
+.input input_a
+.decl neg_input0(i1: I, p1: P)
+.input neg_input0
+
+.decl output_a(i1: I, p1: P)
+.output output_a
+
+output_a(i0, p1) :- input_a(i0, p1), neg_input0(i0, p1).
 

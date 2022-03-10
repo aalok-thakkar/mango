@@ -1,1 +1,33 @@
+.type H
+.type M
+.type T
+.type V
+
+.decl HT(h1: H, t1: T)
+.input HT
+.decl McheckCastInst(m1: M, v1: V, t1: T, v2: V)
+.input McheckCastInst
+.decl VH(v1: V, h1: H)
+.input VH
+.decl notSub(t1: T, t2: T)
+.input notSub
+.decl reachableM(m1: M)
+.input reachableM
+
+.decl badCast(v1: V, t1: T)
+.output badCast
+.decl ptsVT(v1: V, t1: T)
+.output ptsVT
+.decl reachableCast(t1: T, v1: V)
+.output reachableCast
+.decl unsafeDowncast(v1: V, t1: T)
+.output unsafeDowncast
+
+reachableCast(t2, v3) :- McheckCastInst(m0, v1, t2, v3).
+
+ptsVT(v0, t3) :- VH(v0, h1), HT(h1, t3).
+
+unsafeDowncast(v0, t4) :- HT(h1, t7), notSub(t7, t4), VH(v0, h1), McheckCastInst(m2, v3, t4, v0).
+
+badCast(v0, t5) :- notSub(t3, t5), HT(h1, t3), VH(v0, h1).
 

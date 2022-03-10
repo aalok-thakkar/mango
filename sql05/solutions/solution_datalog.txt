@@ -1,1 +1,13 @@
+.type A
+.type NUM
+.type X
+.type Y
+
+.decl input_a(x1: X, y1: Y, n1: NUM, a1: A)
+.input input_a
+
+.decl output_a(n1: NUM, a1: A)
+.output output_a
+
+output_a(n2, a3) :- input_a(x0, y1, n2, a3).
 

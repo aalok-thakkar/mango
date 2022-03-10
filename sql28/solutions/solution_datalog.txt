@@ -1,1 +1,15 @@
+.type N
+.type S
+
+.decl c0(s1: S)
+.input c0
+.decl input_a(n1: N, s1: S)
+.input input_a
+.decl neg_input0(n1: N, s1: S)
+.input neg_input0
+
+.decl output_a(n1: N, s1: S)
+.output output_a
+
+output_a(n0, s1) :- input_a(n0, s1), neg_input0(n0, s3).
 

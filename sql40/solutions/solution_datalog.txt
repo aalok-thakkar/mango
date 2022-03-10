@@ -1,1 +1,12 @@
+.type S
+
+.decl Employee(s1: S, s2: S, s3: S, s4: S)
+.input Employee
+.decl lt(s1: S, s2: S)
+.input lt
+
+.decl output(s1: S)
+.output output
+
+output(s7) :- lt(s2, s4), Employee(s0, s1, s2, s3), Employee(s6, s7, s5, s0).
 

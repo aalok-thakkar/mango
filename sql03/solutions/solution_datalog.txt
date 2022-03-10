@@ -1,1 +1,17 @@
+.type A
+.type ID
+.type P
+.type V
+
+.decl c0(v1: V)
+.input c0
+.decl c1(a1: A)
+.input c1
+.decl input_a(i1: ID, p1: P, a1: A, v1: V)
+.input input_a
+
+.decl output_a(i1: ID, p1: P, a1: A, v1: V)
+.output output_a
+
+output_a(i5, p1, a7, v8) :- c0(v3), input_a(i0, p1, a2, v3), input_a(i5, p1, a7, v8).
 

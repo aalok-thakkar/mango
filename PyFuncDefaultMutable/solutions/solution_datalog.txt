@@ -1,1 +1,16 @@
+.type F
+.type I
+.type V
+
+.decl Mutable(v1: V)
+.input Mutable
+.decl hasDefaultArgs(f1: F)
+.input hasDefaultArgs
+.decl params(f1: F, i1: I, v1: V)
+.input params
+
+.decl PyFuncDefaultMutable(f1: F)
+.output PyFuncDefaultMutable
+
+PyFuncDefaultMutable(f1) :- Mutable(v0), params(f1, i2, v0), hasDefaultArgs(f1).
 

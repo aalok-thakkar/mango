@@ -1,18 +1,16 @@
+.type I
 .type ID
 .type V
-.type I
-.type S
 
-.decl DivExp(v0: ID, v1: V, v2: V)
+.decl DivExp(i1: ID, v1: V, v2: V)
 .input DivExp
-
-.decl IntVar(v0: V, v1: I)
+.decl IntVar(v1: V, i1: I)
 .input IntVar
-
-.decl IsMaybeZero(v0: I)
+.decl IsMaybeZero(i1: I)
 .input IsMaybeZero
 
-.decl ArithmeticError(v0: ID)
+.decl ArithmeticError(i1: ID)
 .output ArithmeticError
 
-ArithmeticError(r) :- DivExp(r, v1, v2), IntVar(v2, i2), IsMaybeZero(i2).
+ArithmeticError(i3) :- IsMaybeZero(i0), IntVar(v1, i0), DivExp(i3, v4, v1).
+

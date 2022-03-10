@@ -1,1 +1,17 @@
+.type C
+.type V
+
+.decl colour(v1: V, c1: C)
+.input colour
+.decl edge(v1: V, v2: V)
+.input edge
+.decl green(c1: C)
+.input green
+.decl red(c1: C)
+.input red
+
+.decl target(v1: V)
+.output target
+
+target(v4) :- red(c0), colour(v1, c0), edge(v1, v4).
 

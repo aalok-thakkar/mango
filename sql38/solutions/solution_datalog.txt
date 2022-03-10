@@ -1,1 +1,19 @@
+.type S
+
+.decl c0(s1: S)
+.input c0
+.decl c1(s1: S)
+.input c1
+.decl input(s1: S, s2: S)
+.input input
+.decl input0(s1: S, s2: S)
+.input input0
+.decl input1(s1: S, s2: S)
+.input input1
+
+.decl output(s1: S)
+.output output
+
+output(s6) :- c1(s0), input0(s1, s0), input(s3, s1), input1(s3, s6).
+output(s6) :- c0(s0), input0(s1, s0), input(s3, s1), input1(s3, s6).
 

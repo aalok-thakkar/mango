@@ -1,1 +1,17 @@
+.type C
+.type T
+
+.decl adjacent(c1: C, c2: C)
+.input adjacent
+.decl agent_at(c1: C, t1: T)
+.input agent_at
+.decl not_wall(c1: C, c2: C)
+.input not_wall
+.decl unlocked(c1: C)
+.input unlocked
+
+.decl valid_move(c1: C, t1: T)
+.output valid_move
+
 valid_move(c0, t6) :- not_wall(c0, c1), unlocked(c0), adjacent(c1, c0), agent_at(c1, t6).
+

@@ -1,1 +1,16 @@
+.type C
+.type P
+.type S
+
+.decl c0(c1: C)
+.input c0
+.decl input0(p1: P, c1: C)
+.input input0
+.decl input_a(s1: S, p1: P)
+.input input_a
+
+.decl output_a(s1: S)
+.output output_a
+
+output_a(s3) :- c0(c0), input0(p1, c0), input_a(s3, p1).
 

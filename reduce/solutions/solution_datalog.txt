@@ -1,1 +1,14 @@
+.type B
+.type D
+.type S
+
+.decl KnownGenericallyAs(b1: B, d1: D)
+.input KnownGenericallyAs
+.decl reduces(d1: D, s1: S)
+.input reduces
+
+.decl reduce(b1: B, s1: S)
+.output reduce
+
 reduce(b0, s3) :- KnownGenericallyAs(b0, d1), reduces(d1, s3).
+

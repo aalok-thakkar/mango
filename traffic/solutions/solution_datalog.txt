@@ -1,1 +1,14 @@
-Crashes(v3) :- GreenSignal(v0), HasTraffic(v0), Intersect(v0, v3), HasTraffic(v3), GreenSignal(v3).
+.type S
+
+.decl GreenSignal(s1: S)
+.input GreenSignal
+.decl HasTraffic(s1: S)
+.input HasTraffic
+.decl Intersect(s1: S, s2: S)
+.input Intersect
+
+.decl Crashes(s1: S)
+.output Crashes
+
+Crashes(s3) :- GreenSignal(s0), HasTraffic(s0), Intersect(s0, s3), HasTraffic(s3), GreenSignal(s3).
+

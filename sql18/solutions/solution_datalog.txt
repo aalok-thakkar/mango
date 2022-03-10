@@ -1,1 +1,14 @@
+.type D
+.type S
+.type T
+
+.decl input0(d1: D, t1: T)
+.input input0
+.decl input_a(d1: D, s1: S)
+.input input_a
+
+.decl output_a(d1: D, t1: T, s1: S)
+.output output_a
+
+output_a(d0, t3, s1) :- input_a(d0, s1), input0(d0, t3).
 

@@ -1,1 +1,16 @@
+.type I
+.type P
+.type T
+
+.decl c0(t1: T)
+.input c0
+.decl c1(t1: T)
+.input c1
+.decl input_a(i1: I, p1: P, t1: T)
+.input input_a
+
+.decl output_a(i1: I, p1: P, t1: T)
+.output output_a
+
+output_a(i5, p2, t0) :- c0(t0), c1(t3), input_a(i1, p2, t3), input_a(i5, p2, t0).
 

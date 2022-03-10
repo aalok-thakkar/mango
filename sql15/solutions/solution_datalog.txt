@@ -1,1 +1,15 @@
+.type C
+.type ID
+
+.decl input0(i1: ID, c1: C)
+.input input0
+.decl input_a(i1: ID, c1: C)
+.input input_a
+.decl neq(i1: ID, i2: ID)
+.input neq
+
+.decl output_a(i1: ID, c1: C, c2: C, i2: ID)
+.output output_a
+
+output_a(i0, c7, c1, i2) :- neq(i0, i2), input0(i0, c1), input_a(i0, c7), input_a(i2, c1).
 

@@ -1,1 +1,16 @@
+.type I
+.type N
+.type S
+
+.decl c0(s1: S)
+.input c0
+.decl input_a(i1: I, n1: N, s1: S)
+.input input_a
+.decl neq(i1: I, i2: I)
+.input neq
+
+.decl output_a(n1: N)
+.output output_a
+
+output_a(n1) :- neq(i0, i4), input_a(i4, n1, s2), c0(s2), input_a(i0, n1, s2).
 

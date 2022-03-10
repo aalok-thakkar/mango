@@ -1,1 +1,14 @@
+.type S
+
+.decl end(s1: S)
+.input end
+.decl input(s1: S, s2: S, s3: S)
+.input input
+.decl start(s1: S)
+.input start
+
+.decl output(s1: S)
+.output output
+
+output(s1) :- end(s0), input(s1, s2, s0), start(s2).
 

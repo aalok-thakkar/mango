@@ -1,1 +1,16 @@
+.type AC
+.type NUM
+.type S
+
+.decl c0(a1: AC)
+.input c0
+.decl c1(a1: AC)
+.input c1
+.decl input_a(s1: S, a1: AC, n1: NUM)
+.input input_a
+
+.decl output_a(s1: S, n1: NUM, n2: NUM)
+.output output_a
+
+output_a(s0, n2, n7) :- c0(a1), c1(a4), input_a(s0, a1, n2), input_a(s0, a4, n7).
 

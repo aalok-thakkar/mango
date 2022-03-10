@@ -1,19 +1,15 @@
 .type ID
 .type L
 
-.decl Block(v0: ID)
+.decl Block(i1: ID, i2: ID)
 .input Block
-
-.decl Last(v0: ID, v1: ID)
-.input Last
-
-.decl JumpKind(v0: ID)
+.decl JumpKind(i1: ID)
 .input JumpKind
-
-.decl Lbl(v0: ID, v1: L)
+.decl Lbl(i1: ID, l1: L)
 .input Lbl
 
-.decl BlockSucc(v0: ID, v1: ID)
+.decl BlockSucc(i1: ID, i2: ID)
 .output BlockSucc
 
-BlockSucc(b0,b1) :- Block(b0), Block(b1), Last(b0, i), JumpKind(i), Lbl(i,L), Lbl(b1,L).
+BlockSucc(i7, i0) :- Lbl(i2, l1), Lbl(i0, l1), Block(i0, i4), JumpKind(i2), Block(i7, i2).
+

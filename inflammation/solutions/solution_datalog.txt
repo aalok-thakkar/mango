@@ -1,2 +1,34 @@
-inflamation(x0) :- not_lumbar_pain(x0), urine_pushing(x0).
-inflamation(x0) :- nausea(x0), urine_pushing(x0).
+.type P
+.type T
+
+.decl burning_urethra(p1: P)
+.input burning_urethra
+.decl gte38(t1: T)
+.input gte38
+.decl lumbar_pain(p1: P)
+.input lumbar_pain
+.decl micturition_pain(p1: P)
+.input micturition_pain
+.decl nausea(p1: P)
+.input nausea
+.decl not_burning_urethra(p1: P)
+.input not_burning_urethra
+.decl not_lumbar_pain(p1: P)
+.input not_lumbar_pain
+.decl not_micturition_pain(p1: P)
+.input not_micturition_pain
+.decl not_nausea(p1: P)
+.input not_nausea
+.decl not_urine_pushing(p1: P)
+.input not_urine_pushing
+.decl temparature(p1: P, t1: T)
+.input temparature
+.decl urine_pushing(p1: P)
+.input urine_pushing
+
+.decl inflamation(p1: P)
+.output inflamation
+
+inflamation(p0) :- nausea(p0), urine_pushing(p0).
+inflamation(p0) :- not_lumbar_pain(p0), urine_pushing(p0).
+

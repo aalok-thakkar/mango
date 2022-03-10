@@ -1,1 +1,17 @@
+.type F
+.type L
+.type N
+.type V
+
+.decl GlobalDecl(v1: V, n1: N)
+.input GlobalDecl
+.decl fun(f1: F, l1: L)
+.input fun
+.decl params(f1: F, v1: V)
+.input params
+
+.decl ModifiesGlobal(f1: F, l1: L)
+.output ModifiesGlobal
+
+ModifiesGlobal(f0, l5) :- params(f0, v1), GlobalDecl(v1, n3), fun(f0, l5).
 

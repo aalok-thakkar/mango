@@ -1,1 +1,25 @@
+.type C
+.type F
+.type FID
+.type S
+.type SID
+.type Y
+
+.decl c0(y1: Y)
+.input c0
+.decl c1(f1: F)
+.input c1
+.decl input0(s1: SID, c1: C)
+.input input0
+.decl input1(f1: FID, f1: F)
+.input input1
+.decl input2(s1: SID, s1: S, y1: Y)
+.input input2
+.decl input_a(c1: C, f1: FID)
+.input input_a
+
+.decl output_a(s1: S)
+.output output_a
+
+output_a(s8) :- input0(s0, c1), input_a(c1, f3), input1(f3, f5), c1(f5), c0(y9), input2(s0, s8, y9).
 

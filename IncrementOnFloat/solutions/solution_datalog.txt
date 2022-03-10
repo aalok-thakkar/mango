@@ -1,1 +1,22 @@
+.type C
+.type I
+.type N
+.type S
+.type T
+.type U
+.type V
+
+.decl floatTypes(t1: T)
+.input floatTypes
+.decl forStmt(i1: I, n1: N, c1: C, u1: U)
+.input forStmt
+.decl initExpr(n1: N, v1: V)
+.input initExpr
+.decl var(v1: V, s1: S, t1: T)
+.input var
+
+.decl IncrementOnFloat(i1: I)
+.output IncrementOnFloat
+
+IncrementOnFloat(i6) :- floatTypes(t0), var(v1, s2, t0), initExpr(n4, v1), forStmt(i6, n4, c8, u9).
 

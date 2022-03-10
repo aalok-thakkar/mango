@@ -1,1 +1,16 @@
+.type A
+.type ID
+.type N
+.type S
+.type T
+
+.decl input_a(i1: ID, t1: T, n1: N, s1: S, a1: A)
+.input input_a
+.decl neq(a1: A, a2: A)
+.input neq
+
+.decl output_a(i1: ID, t1: T, n1: N, s1: S, a1: A)
+.output output_a
+
+output_a(i7, t8, n2, s3, a5) :- input_a(i0, t1, n2, s1, a4), neq(a5, a4), input_a(i7, t8, n2, s3, a5).
 

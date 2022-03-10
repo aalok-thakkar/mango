@@ -1,1 +1,17 @@
+.type L
+.type X
+
+.decl Certificate(x1: X, l1: L)
+.input Certificate
+.decl Check(x1: X, l1: L)
+.input Check
+.decl Verify(x1: X, l1: L)
+.input Verify
+.decl opSucc(l1: L, l2: L)
+.input opSucc
+
+.decl Correct(l1: L)
+.output Correct
+
+Correct(l7) :- Check(x2, l3), opSucc(l3, l1), Check(x0, l1), opSucc(l1, l7).
 

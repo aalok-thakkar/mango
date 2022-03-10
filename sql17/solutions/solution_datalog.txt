@@ -1,1 +1,20 @@
+.type C
+.type ID
+.type N
+.type P
+.type S
+
+.decl c0(p1: P)
+.input c0
+.decl c1(n1: N)
+.input c1
+.decl input0(i1: ID, c1: C, p1: P)
+.input input0
+.decl input_a(i1: ID, n1: N, s1: S)
+.input input_a
+
+.decl output_a(i1: ID, n1: N, s1: S)
+.output output_a
+
+output_a(i0, n4, s7) :- c1(n4), input_a(i0, n4, s7).
 

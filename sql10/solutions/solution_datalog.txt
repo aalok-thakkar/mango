@@ -1,1 +1,12 @@
+.type I
+.type N
+.type S
+
+.decl input_a(i1: I, n1: N, s1: S)
+.input input_a
+
+.decl output_a(n1: N, s1: S)
+.output output_a
+
+output_a(n1, s5) :- input_a(i3, n1, s5).
 

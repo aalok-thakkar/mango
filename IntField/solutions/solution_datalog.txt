@@ -1,17 +1,16 @@
-.type S
 .type H
 .type I
+.type S
 
-.decl Store(v0: S, v1: S, v2:S)
+.decl IntVar(s1: S, i1: I)
+.input IntVar
+.decl Store(s1: S, s2: S, s3: S)
 .input Store
-
-.decl VarPointsTo(v0: S, v1: H)
+.decl VarPointsTo(s1: S, h1: H)
 .input VarPointsTo
 
-.decl IntVar(v0: S, v1: I)
-.input IntVar
-
-.decl IntField(v0: H, v1: S, v2: I)
+.decl IntField(h1: H, s1: S, i1: I)
 .output IntField
 
-IntField(h, f, i) :- Store(v1, f, v2), VarPointsTo(v1, h), IntVar(v2, i).
+IntField(h1, s3, i6) :- Store(s0, s3, s4), VarPointsTo(s0, h1), IntVar(s4, i6).
+

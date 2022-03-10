@@ -1,1 +1,12 @@
+.type ID
+.type NAME
+.type NUM
+
+.decl input_a(i1: ID, n1: NAME, n1: NUM, i2: ID)
+.input input_a
+
+.decl output_a(i1: ID, n1: NAME)
+.output output_a
+
+output_a(i3, n5) :- input_a(i0, n1, n2, i3), input_a(i3, n5, n6, i7).
 

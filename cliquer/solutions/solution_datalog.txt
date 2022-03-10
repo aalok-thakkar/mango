@@ -1,1 +1,10 @@
+.type V
+
+.decl Edge(v1: V, v2: V)
+.input Edge
+
+.decl Leg(v1: V, v2: V)
+.output Leg
+
 Leg(v0, v3) :- Edge(v0, v1), Edge(v1, v3).
+

@@ -1,1 +1,14 @@
+.type DATE
+.type ID
+.type NUM
+
+.decl input0(i1: ID, d1: DATE, n1: NUM)
+.input input0
+.decl neg_input(i1: ID, n1: NUM)
+.input neg_input
+
+.decl output_a(i1: ID, d1: DATE, n1: NUM)
+.output output_a
+
+output_a(i0, d1, n2) :- input0(i0, d1, n2), neg_input(i0, n2).
 

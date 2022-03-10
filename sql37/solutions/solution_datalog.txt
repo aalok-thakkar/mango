@@ -1,1 +1,17 @@
+.type B
+.type E
+.type S
+
+.decl end(s1: S, e1: E, s2: S, e2: E)
+.input end
+.decl input(b1: B, s1: S, e1: E)
+.input input
+.decl start(s1: S, e1: E, s2: S, e2: E)
+.input start
+
+.decl output(b1: B, s1: S, e1: E, b2: B, s2: S, e2: E)
+.output output
+
+output(b11, s7, e2, b14, s5, e6) :- end(s6, e2, s1, e2), input(b11, s7, e2), start(s3, e3, s4, e6), input(b14, s5, e6).
+output(b0, s1, e2, b7, s5, e6) :- end(s1, e2, s5, e3), input(b7, s5, e6), input(b0, s1, e1).
 

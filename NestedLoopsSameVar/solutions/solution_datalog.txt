@@ -1,1 +1,15 @@
+.type I
+.type S
+
+.decl ForStmt(s1: S, i1: I)
+.input ForStmt
+.decl Pred(s1: S, s2: S)
+.input Pred
+.decl Succ(s1: S, s2: S)
+.input Succ
+
+.decl NestedLoopsSameVar(s1: S, s2: S)
+.output NestedLoopsSameVar
+
+NestedLoopsSameVar(s0, s2) :- ForStmt(s0, i1), Succ(s6, s0), ForStmt(s2, i1), Pred(s0, s2).
 

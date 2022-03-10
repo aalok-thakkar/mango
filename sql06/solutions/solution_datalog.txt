@@ -1,1 +1,16 @@
+.type A
+.type NUM
+.type S
+
+.decl c0(n1: NUM)
+.input c0
+.decl pps(s1: S, a1: A, n1: NUM)
+.input pps
+.decl tablea(s1: S, a1: A)
+.input tablea
+
+.decl output_a(s1: S, a1: A, a2: A, n1: NUM)
+.output output_a
+
+output_a(s0, a1, a3, n4) :- pps(s0, a3, n4), c0(n4), tablea(s0, a1).
 

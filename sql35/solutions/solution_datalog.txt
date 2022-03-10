@@ -1,1 +1,14 @@
+.type S
+
+.decl c0(s1: S)
+.input c0
+.decl input(s1: S, s2: S, s3: S, s4: S)
+.input input
+.decl max(s1: S, s2: S)
+.input max
+
+.decl output(s1: S, s2: S, s3: S, s4: S)
+.output output
+
+output(s7, s0, s1, s10) :- c0(s1), input(s7, s0, s1, s10), max(s0, s1).
 

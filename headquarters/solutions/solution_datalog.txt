@@ -1,1 +1,14 @@
+.type B
+.type C
+.type S
+
+.decl IsBasedIn(b1: B, c1: C)
+.input IsBasedIn
+.decl IsLocatedIn(c1: C, s1: S)
+.input IsLocatedIn
+
+.decl IsHeadquarteredIn(b1: B, s1: S)
+.output IsHeadquarteredIn
+
 IsHeadquarteredIn(b0, s3) :- IsBasedIn(b0, c1), IsLocatedIn(c1, s3).
+

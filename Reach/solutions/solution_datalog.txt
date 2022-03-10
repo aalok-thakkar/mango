@@ -1,17 +1,16 @@
+.type ID
 .type LOC
 .type V
-.type ID
 
-.decl StatementAt(v0: LOC, v1: ID)
+.decl Assign(i1: ID, v1: V)
+.input Assign
+.decl Follows(l1: LOC, l2: LOC)
+.input Follows
+.decl StatementAt(l1: LOC, i1: ID)
 .input StatementAt
 
-.decl Assign(v0: ID, v1: V)
-.input Assign
-
-.decl Follows(v0: LOC, v1: LOC)
-.input Follows
-
-.decl Reach(v0: ID, v1: V, v2: LOC)
+.decl Reach(i1: ID, v1: V, l1: LOC)
 .output Reach
 
-Reach(s,x,j) :- StatementAt(i,s), Assign(s,x), Follows(i,j).
+Reach(i0, v1, l5) :- StatementAt(l2, i0), Follows(l2, l5), Assign(i0, v1).
+

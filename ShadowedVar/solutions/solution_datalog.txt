@@ -1,13 +1,13 @@
 .type BID
 .type V
 
-.decl DeclVar(v0: BID, v1:V)
+.decl DeclVar(b1: BID, v1: V)
 .input DeclVar
-
-.decl Encloses(v0: BID, v1: BID)
+.decl Encloses(b1: BID, b2: BID)
 .input Encloses
 
-.decl ShadowedVar(v0: BID, v1: BID, v2: V)
+.decl ShadowedVar(b1: BID, b2: BID, v1: V)
 .output ShadowedVar
 
-ShadowedVar(blockId1,blockId2,varName) :- DeclVar(blockId1,varName), DeclVar(blockId2,varName), Encloses(blockId1,blockId2).
+ShadowedVar(b0, b1, v3) :- DeclVar(b1, v3), DeclVar(b0, v3), Encloses(b0, b1).
+

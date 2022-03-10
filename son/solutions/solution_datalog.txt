@@ -1,1 +1,14 @@
+.type P
+
+.decl brother(p1: P, p2: P)
+.input brother
+.decl father(p1: P, p2: P)
+.input father
+.decl sister(p1: P, p2: P)
+.input sister
+
+.decl target(p1: P, p2: P)
+.output target
+
 target(p0, p2) :- brother(p0, p1), father(p2, p0).
+

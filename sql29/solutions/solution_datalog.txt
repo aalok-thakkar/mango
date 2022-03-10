@@ -1,1 +1,19 @@
+.type DATE
+.type ID
+.type NUM
+
+.decl c0(n1: NUM)
+.input c0
+.decl c1(n1: NUM)
+.input c1
+.decl input0(i1: ID, n1: NUM, d1: DATE)
+.input input0
+.decl input_a(i1: ID, n1: NUM, d1: DATE)
+.input input_a
+
+.decl output_a(i1: ID, n1: NUM, d1: DATE)
+.output output_a
+
+output_a(i0, n1, d2) :- input_a(i0, n2, d2), c0(n1).
+output_a(i0, n1, d2) :- input0(i0, n1, d2).
 

@@ -1,1 +1,20 @@
+.type D
+.type I
+.type N
+.type NUM
+.type U
+
+.decl c0(d1: D)
+.input c0
+.decl input(i1: I, n1: N, u1: U, d1: D)
+.input input
+.decl input0(i1: I, n1: NUM, d1: D)
+.input input0
+.decl input1(u1: U, n1: NUM, d1: D)
+.input input1
+
+.decl output(i1: I, n1: N, u1: U, n1: NUM, n2: NUM, d1: D)
+.output output
+
+output(i4, n5, u1, n13, n2, d0) :- input1(u1, n2, d0), c0(d0), input(i4, n5, u1, d1), input0(i4, n13, d0).
 
