@@ -1,1 +1,2 @@
+Andrew Cropper and Stephen Muggleton. 2015. Logical Minimisation of Meta-Rules Within Meta-Interpretive Learning. In Inductive Logic Programming. https://doi.org/10.1007/978-3-319-23708-4_5
 

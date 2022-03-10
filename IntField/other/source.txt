@@ -1,1 +1,2 @@
+Magnus Madsen, Ming-Ho Yee, and Ondřej Lhoták. 2016. From Datalog to Flix: A Declarative Language for Fixed Points on Lattices. In Proceedings of the ACM Conference on Programming Language Design and Implementation (PLDI). https://doi.org/10.1145/2980983.2908096
 

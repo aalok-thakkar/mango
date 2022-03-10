@@ -1,1 +1,1 @@
-
+Insu Yun ,Changwoo Min,Xujie Si,Yeongjin Jang,Taesoo Kim,and Mayur Naik. 2016. APISan: Sanitizing API Usages through Semantic Cross-checking. In Proceedings of the USENIX Security Symposium.

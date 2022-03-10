@@ -1,1 +1,1 @@
-
+Aalok Thakkar, Aaditya Naik, Nathaniel Sands, Rajeev Alur, Mayur Naik, and Mukund Raghothaman. 2021. Example-guided synthesis of relational queries. Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation. Association for Computing Machinery, New York, NY, USA, 1110–1125. DOI:https://doi.org/10.1145/3453483.3454098
